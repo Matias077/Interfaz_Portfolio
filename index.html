@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url("Archivos/Imagenes/fondo.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            height: 60px;
+            background-color: rgba(255, 255, 255, 0.7);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            color: #00aaff;
+        }
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            flex: 1;
+        }
+        .intro-container {
+            background-color: rgba(204, 204, 204, 0.8);
+            padding: 20px;
+            margin: 20px;
+            float: right;
+            width: 50%;
+            box-sizing: border-box;
+        }
+        .intro {
+            margin: 0;
+            font-size: 25px;
+            line-height: 1.6;
+            font-weight: bold;
+        }
+        .footer-icons {
+            text-align: right;
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            color: rgb(72, 190, 190);
+        }
+
+        /* Estilo para el tooltip */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px 10px;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Estilo para mostrar tooltip hacia abajo */
+        .tooltip[data-direction="down"] .tooltiptext {
+            bottom: auto;
+            top: 100%;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="social-icons">
+            <a href="https://github.com/Matias077" style="color: black;">
+                <div class="tooltip" data-direction="down">
+                    <img src="Archivos/Imagenes/github.svg" alt="GitHub" style="width: 40px;">
+                    <span class="tooltiptext">GitHub</span>
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/mat%C3%ADas-jos%C3%A9-arco-7039a4222/" style="color: black;">
+                <div class="tooltip" data-direction="down">
+                    <img src="Archivos/Imagenes/linkedin.svg" alt="LinkedIn" style="width: 40px;">
+                    <span class="tooltiptext">LinkedIn</span>
+                </div>
+            </a>
+        </div>
+    </header>
+    <h1 style="font-size: 70px; margin: 20px 20px 0;">Matías Arco</h1>
+    <div class="intro-container">
+        <p class="intro">¡Bienvenidos al portfolio de desarrollo de
+            software de Matías Arco! Te invito a explorar mi
+            viaje en el mundo de la programación y la
+            tecnología.
+
+            Como desarrollador principiante, he estado
+            inmerso en un emocionante viaje de
+            aprendizaje y crecimiento, este espacio es un
+            reflejo de mis esfuerzos y logros hasta el
+            momento.</p>
+    </div>
+    <div class="footer-icons">
+        <a href="Archivos/sobre_mi.html">
+            <div class="tooltip">
+                <img src="Archivos/Imagenes/programmer.svg" alt="Sobre mí" style="width: 60px;">
+                <span class="tooltiptext">Sobre mí</span>
+            </div>
+        </a>
+
+        <a href="Archivos/proyectos.html">
+            <div class="tooltip">
+                <img src="Archivos/Imagenes/proyectos.svg" alt="Proyectos" style="width: 60px;">
+                <span class="tooltiptext">Proyectos</span>
+            </div>
+        </a>
+        <a href="Archivos/certificacion.html">
+            <div class="tooltip">
+                <img src="Archivos/Imagenes/Certificacion.svg" alt="Certificación" style="width: 60px;">
+                <span class="tooltiptext">Certificación</span>
+            </div>
+        </a>
+        <a href="Archivos/contacto.html">
+            <div class="tooltip">
+                <img src="Archivos/Imagenes/contact.svg" alt="Contacto" style="width: 60px;">
+                <span class="tooltiptext">Contacto</span>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
+
+
+
